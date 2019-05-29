@@ -1,0 +1,2 @@
+beginner_tutorials:new_project
+-DCATKIN_DEVEL_PREFIX=/home/notanshuman/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/notanshuman/catkin_ws/install -G Unix Makefiles
