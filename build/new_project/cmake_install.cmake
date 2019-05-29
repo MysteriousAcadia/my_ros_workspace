@@ -44,6 +44,22 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/new_project/action" TYPE FILE FILES "/home/notanshuman/catkin_ws/src/new_project/action/Keyboard.action")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/new_project/msg" TYPE FILE FILES
+    "/home/notanshuman/catkin_ws/devel/share/new_project/msg/KeyboardAction.msg"
+    "/home/notanshuman/catkin_ws/devel/share/new_project/msg/KeyboardActionGoal.msg"
+    "/home/notanshuman/catkin_ws/devel/share/new_project/msg/KeyboardActionResult.msg"
+    "/home/notanshuman/catkin_ws/devel/share/new_project/msg/KeyboardActionFeedback.msg"
+    "/home/notanshuman/catkin_ws/devel/share/new_project/msg/KeyboardGoal.msg"
+    "/home/notanshuman/catkin_ws/devel/share/new_project/msg/KeyboardResult.msg"
+    "/home/notanshuman/catkin_ws/devel/share/new_project/msg/KeyboardFeedback.msg"
+    )
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/new_project/cmake" TYPE FILE FILES "/home/notanshuman/catkin_ws/build/new_project/catkin_generated/installspace/new_project-msg-paths.cmake")
 endif()
 

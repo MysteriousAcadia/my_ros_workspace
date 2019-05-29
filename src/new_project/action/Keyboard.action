@@ -1,0 +1,10 @@
+#goal definition
+string A
+
+---
+#result definition
+float64 time
+int64 messages
+---
+#feedback
+int64 length
