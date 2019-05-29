@@ -1,0 +1,8 @@
+float64 a
+float64 b
+int64 c
+# new_project/input in
+---
+float64 result1
+bool result2
+# new_project/output out

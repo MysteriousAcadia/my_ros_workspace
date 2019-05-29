@@ -3,6 +3,6 @@ prefix=/home/notanshuman/catkin_ws/devel
 Name: new_project
 Description: Description of new_project
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/notanshuman/catkin_ws/devel/include
 Libs: -L/home/notanshuman/catkin_ws/devel/lib 
-Requires: 
+Requires: rospy std_msgs

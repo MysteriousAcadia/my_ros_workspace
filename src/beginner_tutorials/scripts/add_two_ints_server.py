@@ -4,8 +4,29 @@ from beginner_tutorials.srv import *
 import rospy
 
 def handle_add_two_ints(req):
-    print "Returning [%s + %s = %s]"%(req.a, req.b, (req.a + req.b))
-    return AddTwoIntsResponse(req.a + req.b)
+    try:
+        if(req.c == 1):
+            print "Returning [%s + %s = %s]"%(req.a, req.b, (req.a + req.b))
+            return AddTwoIntsResponse(req.a + req.b,True)
+    
+        elif(req.c == 2):
+            print "Returning [%s - %s = %s]"%(req.a, req.b, (req.a - req.b))
+            return AddTwoIntsResponse(req.a - req.b,True)
+    
+        elif(req.c == 3):
+            print "Returning [%s * %s = %s]"%(req.a, req.b, (req.a * req.b))
+            return AddTwoIntsResponse(req.a * req.b,True)
+    
+        elif(req.c == 4):
+            print "Returning [%s / %s = %s]"%(req.a, req.b, (req.a / req.b))
+            return AddTwoIntsResponse(req.a / req.b,True)
+        else:
+            print "Returning Error"
+            return AddTwoIntsResponse(0,False)
+    except:
+        return AddTwoIntsResponse(0,False)
+
+    
 
 
 
